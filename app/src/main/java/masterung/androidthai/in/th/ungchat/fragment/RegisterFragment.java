@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -18,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import masterung.androidthai.in.th.ungchat.MainActivity;
 import masterung.androidthai.in.th.ungchat.R;
@@ -104,7 +106,7 @@ public class RegisterFragment extends Fragment {
         } else {
 
 //            No Space
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+            final FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
             firebaseAuth.createUserWithEmailAndPassword(emailString, passwordString)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -114,6 +116,13 @@ public class RegisterFragment extends Fragment {
 
                                 Toast.makeText(getActivity(), "Register Success",
                                         Toast.LENGTH_SHORT).show();
+                                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+                                String userUIDstring = firebaseUser.getUid();
+                                Log.d("28JanV1", "userUID ==> " + userUIDstring);
+
+
+
+//                                Back to MainFragment
                                 getActivity().getSupportFragmentManager().popBackStack();
 
                             } else {
