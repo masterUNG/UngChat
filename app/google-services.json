@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "22559070126",
+    "firebase_url": "https://ungchat-f35f7.firebaseio.com",
+    "project_id": "ungchat-f35f7",
+    "storage_bucket": "ungchat-f35f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22559070126:android:03fcad144056d951",
+        "android_client_info": {
+          "package_name": "masterung.androidthai.in.th.ungchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22559070126-73cand72n0ls06j98kdc4a4js6ug0asa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "masterung.androidthai.in.th.ungchat",
+            "certificate_hash": "99f1de59cbbb9f0ab27aeb63c596235bc843b92a"
+          }
+        },
+        {
+          "client_id": "22559070126-6ettmti6lgalu7i4r7lklo42iojtpbla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG_ZgwmYTCOBbrpX5-gp5Dw-oxwrKGkMY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22559070126-6ettmti6lgalu7i4r7lklo42iojtpbla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
